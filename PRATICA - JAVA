@@ -1,0 +1,129 @@
+import java.util.Scanner;
+
+public class avaliaçaodeproduto{ 
+	public static void main(String[] args) {
+    	
+    	try (Scanner scanner = new Scanner (System.in)) {
+			String ap2 = ("****************************************");
+			System.out.println(ap2);
+			String apresentação = "Seja bem-vindo a LetSPA!";
+			System.out.println(apresentação);
+			String ap3 = ("*****************************************");
+			System.out.println(ap3);
+			System.out.println();
+			
+			String usuário = "Digite seu nome: ";
+			System.out.print(usuário);
+			String nome = scanner.nextLine();
+			System.out.println();
+			
+			String convite = "Olá, convido você a participar da nossa nova dinâmica :)";
+			System.out.println(convite);
+			String dinamica = "A dinâmica consiste em 5 perguntas sobre o nosso primeiro lançamento.";
+			System.out.println(dinamica);
+			String resp = "Caso você alcance a nossa pontuação maxíma (5 pontos), irá ganhar um voucher de 40% de desconto em qualquer produto de nossa loja.";
+			System.out.println(resp);
+			System.out.println();
+			
+			int pontoC = 0;
+			int pontoE = 0;
+			
+			String questão1 = "Qual o nome do nosso produto?";
+			System.out.println(questão1);
+			System.out.println ("[A] Divosa ");
+			System.out.println ("[B] GlamuorSPA ");
+			System.out.println ("[C] GlamurosaSPA ");
+			
+			System.out.println ("Digite a sua resposta:");
+			String resposta1 = scanner.nextLine();
+			if (resposta1.equals("B")) {
+				System.out.println ("Resposta correta! ");
+				pontoC = pontoC + 1;
+			}else {
+				System.out.println ( "Resposta errada! ");
+				System.out.println();
+				pontoE = pontoE + 1;
+			}
+			
+			String questão2 = "O que é o nosso produto? ";
+			System.out.println(questão2);
+			System.out.println ("[A] Hidratante Corporal ");
+			System.out.println ("[B] Esmalte ");
+			System.out.println ("[C] Shampoo ");
+			
+			System.out.println ("Digite a sua resposta:");
+			String resposta2 = scanner.nextLine();
+			if (resposta2.equals("A")) {
+				System.out.println ("Resposta correta! ");
+				pontoC = pontoC + 1;
+			}else {
+				System.out.println ("Resposta errada! ");
+				System.out.println();
+				pontoE = pontoE + 1;
+			}
+			String questão3 = "Qual a fragância do nosso produto?";
+			System.out.println(questão3);
+			System.out.println ("[A] Morango ");
+			System.out.println ("[B] Lichia ");
+			System.out.println ("[C] Uva ");
+			
+			System.out.println ("Digite a sua resposta:");
+			String resposta3 = scanner.nextLine();
+			if (resposta3.equals("B")) {
+				System.out.println ("Resposta correta! ");
+				pontoC = pontoC + 1;
+			}else {
+				System.out.println ("Resposta errada! ");
+				System.out.println();
+				pontoE = pontoE + 1;
+			}
+			String questão4 = "O que nosso produto oferece?";
+			System.out.println(questão4);
+			System.out.println ("[A] Hidratação profunda");
+			System.out.println ("[B] Oleosidade");
+			System.out.println ("[C] Descamação da pele");
+			
+			System.out.println ("Digite a sua resposta:");
+			String resposta4 = scanner.nextLine();
+			if (resposta4.equals("A")) {
+				System.out.println ( "Resposta correta!" );
+				pontoC = pontoC + 1;
+			}else {
+				System.out.println ("Resposta errada! ");
+				System.out.println();
+				pontoE = pontoE + 1;
+			}  
+			String questão5 = "Em que ano ele foi lançado?";
+			System.out.println(questão5);
+			System.out.println ("[A] 2020");
+			System.out.println ("[B] 2019");
+			System.out.println ("[C] 2022");
+			
+			System.out.println ("Digite a sua resposta:");
+			String resposta5 = scanner.nextLine();
+			if (resposta5.equals("C")) {
+				System.out.println ("Resposta correta! ");
+				pontoC = pontoC + 1;
+			}else {
+				System.out.println ("Resposta errada! ");
+				System.out.println();
+			}	int j = pontoE = pontoE;
+			int i = j;
+			
+String result = "SUA PONTUAÇÃO FOI:";
+System.out.println(result);
+System.out.println("Nome: " +nome );
+System.out.println("Acertos: " +pontoC );
+System.out.println("Erros: " +pontoE );
+if ( pontoC == 5) {
+			System.out.println("VOCÊ ATINGIU A PONTUAÇÃO MÁXIMA!");
+			System.out.println("PARABÉNS, VOCÊ ACABA DE GANHAR UM CUPOM DE 40% DE DESCONTO EM QUALQUER PRODUTO DA NOSSA LOJA!");
+}
+   if (pontoC < 5) {
+ System.out.println("INFELIZMENTE VOCÊ NÃO ATINGIU A PONTUAÇÃO MÁXIMA, TENTE OUTRA VEZ NO PRÓXIMO LANÇAMENTO. :( ");
+System.out.println();
+   }
+		}
+	}
+}
+	
