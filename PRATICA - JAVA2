@@ -1,1 +1,45 @@
+import java.util.Scanner;
+import java.time.LocalTime;
+
+public class boas_vindas_usuário; {
+	
+	public static void main(String[] args) { 
+	Scanner scanner = new Scanner (System.in);
+    System.out.println ("Usuário:");
+    String nome = scanner.nextLine();
+    if (nome.equals("João Lucas")){
+    	System.out.println();
+    }else {
+    	System.out.println ("Usuário e/ou senha incorretos.");
+     	System.out.println();
+    }
+    System.out.println ("Senha:");
+    String senha = scanner.nextLine();
+    if (senha.equals("50711170")){
+    	System.out.println();
+    }else {
+    	System.out.println ("Usuário e/ou senha incorretos.");
+     	System.out.println();
+}
+  
+	double localtime = LocalTime.now().getHour();
+	System.out.println();
+	if ( localtime >6 && localtime <12){
+		System.out.println ("Bom dia, você se logou ao nosso sistema.");
+	}
+	if ( localtime >12 && localtime <18){
+		System.out.println ("Bom tarde, você se logou ao nosso sistema.");
+	}
+	if ( localtime >18 && localtime <24){
+		System.out.println ("Bom noite, você se logou ao nosso sistema.");
+	}
+	if ( localtime >0 && localtime <6){
+		System.out.println ("Boa madrugada, você se logou ao nosso sistema.");
+		
+	}
+	}	
+}
+
+
+
 
