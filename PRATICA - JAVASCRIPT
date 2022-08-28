@@ -1,0 +1,48 @@
+<html> Vamos calcular a quantidade de moedas!</html>
+<meta charset="UFT-8">
+<input>
+<button>Efetuar calculo</button>
+<script>
+    function calcular (){
+        var valor = document.querySelector("input").value;
+        var moedadeCinquenta = 0;
+        var moedadeVinteECinco = 0;
+        var moedadeDez = 0;
+        var moedadeCinco = 0; 
+        var moedadeUm = 0;
+        var totaldeMoeda = 0;
+        function verifica (){
+            while (valor> 0){
+            if( valor >= 0.5){
+                moedadeCinquenta++;
+                valor -= 0.5;
+                valor = parseFloat(valor.toFixed (2));
+            }
+            else if (valor >= 0.25){
+                moedadeVinteECinco++;
+                valor -= 0.25;
+                valor = parseFloat(valor.toFixed (2));
+        }
+        else if (valor >= 0.1){
+                moedadeDez++;
+                valor -= 0.1;
+                valor = parseFloat(valor.toFixed (2));
+    } 
+        else if (valor >= 0.5){
+                moedadeCinco++;
+                valor -= 0.5;
+                valor = parseFloat(valor.toFixed (2));
+        }
+        else {
+            moedadeUm++;
+            valor-= 0.01;
+            valor = parseFloat(valor.toFixed (2));
+        }
+        totaldeMoeda++;
+
+} 
+
+}  
+ }
+</script>
+        
